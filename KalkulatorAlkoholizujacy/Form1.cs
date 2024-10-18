@@ -24,7 +24,7 @@ namespace KalkulatorAlkoholizujacy
             comboBoxDrink.Items.Add("piwo");
             comboBoxDrink.Items.Add("wino");
             comboBoxDrink.Items.Add("wódka");
-            comboBoxDrink.Items.Add("herbatka z prądem");
+            comboBoxDrink.Items.Add("rum");
         }
         private double GetDishVolume(string dish)
         {
@@ -50,14 +50,18 @@ namespace KalkulatorAlkoholizujacy
                     return 0.12;
                 case "wódka":
                     return 0.40;
-                case "herbatka z prądem":
+                case "rum":
                     return 0.45;
             }
             return 0;
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            double volume = GetDishVolume(comboBoxDish.SelectedItem.ToString());
+            double percent = GetDrinkPercent(comboBoxDrink.SelectedItem.ToString());
+            int pieces = int.Parse(textBoxPieces.Text);
+
+            label1.Text = $"objętość napoju: {volume * pieces}\n(czystego spirytusu {volume * pieces * percent})";
         }
     }
 }
