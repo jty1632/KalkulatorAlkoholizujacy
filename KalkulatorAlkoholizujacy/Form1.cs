@@ -26,10 +26,38 @@ namespace KalkulatorAlkoholizujacy
             comboBoxDrink.Items.Add("wódka");
             comboBoxDrink.Items.Add("herbatka z prądem");
         }
-
+        private double GetDishVolume(string dish)
+        {
+            switch (dish) {
+                case "kufel":
+                    return 0.25;
+                case "kieliszek 50":
+                    return 0.05;
+                case "kieliszek 100":
+                    return 0.10;
+                case "szklanka":
+                    return 0.25;
+            }
+            return 0;
+        }
+        private double GetDrinkPercent(string drink)
+        {
+            switch (drink)
+            {
+                case "piwo":
+                    return 0.05;
+                case "wino":
+                    return 0.12;
+                case "wódka":
+                    return 0.40;
+                case "herbatka z prądem":
+                    return 0.45;
+            }
+            return 0;
+        }
         private void button1_Click(object sender, EventArgs e)
         {
-        
+            
         }
     }
 }
