@@ -43,36 +43,36 @@ namespace KalkulatorAlkoholizujacy
             // 
             // comboBoxDish
             // 
-            this.comboBoxDish.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.comboBoxDish.Font = new System.Drawing.Font("Microsoft YaHei Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.comboBoxDish.FormattingEnabled = true;
             this.comboBoxDish.Location = new System.Drawing.Point(130, 16);
             this.comboBoxDish.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
             this.comboBoxDish.Name = "comboBoxDish";
-            this.comboBoxDish.Size = new System.Drawing.Size(200, 33);
+            this.comboBoxDish.Size = new System.Drawing.Size(200, 36);
             this.comboBoxDish.TabIndex = 0;
             // 
             // comboBoxDrink
             // 
-            this.comboBoxDrink.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.comboBoxDrink.Font = new System.Drawing.Font("Microsoft YaHei Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.comboBoxDrink.FormattingEnabled = true;
             this.comboBoxDrink.Location = new System.Drawing.Point(95, 61);
             this.comboBoxDrink.Name = "comboBoxDrink";
-            this.comboBoxDrink.Size = new System.Drawing.Size(235, 33);
+            this.comboBoxDrink.Size = new System.Drawing.Size(235, 36);
             this.comboBoxDrink.TabIndex = 1;
             // 
             // textBoxPieces
             // 
-            this.textBoxPieces.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.textBoxPieces.Font = new System.Drawing.Font("Microsoft YaHei Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBoxPieces.Location = new System.Drawing.Point(86, 109);
             this.textBoxPieces.Name = "textBoxPieces";
-            this.textBoxPieces.Size = new System.Drawing.Size(244, 32);
+            this.textBoxPieces.Size = new System.Drawing.Size(244, 35);
             this.textBoxPieces.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(501, 111);
+            this.label1.Location = new System.Drawing.Point(422, 84);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 25);
             this.label1.TabIndex = 4;
@@ -154,6 +154,7 @@ namespace KalkulatorAlkoholizujacy
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kalkulator Alkoholizujący";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
