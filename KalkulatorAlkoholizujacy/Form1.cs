@@ -57,9 +57,14 @@ namespace KalkulatorAlkoholizujacy
         }
         private void button1_Click(object sender, EventArgs e)
         {
+            int pieces;
+            if (comboBoxDish.SelectedIndex == -1 || comboBoxDrink.SelectedIndex == -1
+                || !int.TryParse(textBoxPieces.Text, out pieces) || pieces <= 0) {
+                label1.Text = "Błędne dane";
+                return;
+            }
             double volume = GetDishVolume(comboBoxDish.SelectedItem.ToString());
             double percent = GetDrinkPercent(comboBoxDrink.SelectedItem.ToString());
-            int pieces = int.Parse(textBoxPieces.Text);
 
             label1.Text = $"objętość napoju: {volume * pieces}\n(czystego spirytusu {volume * pieces * percent})";
         }
