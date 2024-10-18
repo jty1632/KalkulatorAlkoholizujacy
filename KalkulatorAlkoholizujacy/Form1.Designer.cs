@@ -45,23 +45,28 @@
             // 
             this.comboBoxDish.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.comboBoxDish.FormattingEnabled = true;
+
             this.comboBoxDish.Location = new System.Drawing.Point(130, 16);
             this.comboBoxDish.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
             this.comboBoxDish.Name = "comboBoxDish";
             this.comboBoxDish.Size = new System.Drawing.Size(200, 33);
+
             this.comboBoxDish.TabIndex = 0;
             // 
             // comboBoxDrink
             // 
             this.comboBoxDrink.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.comboBoxDrink.FormattingEnabled = true;
+
             this.comboBoxDrink.Location = new System.Drawing.Point(95, 61);
             this.comboBoxDrink.Name = "comboBoxDrink";
             this.comboBoxDrink.Size = new System.Drawing.Size(235, 33);
+
             this.comboBoxDrink.TabIndex = 1;
             // 
             // textBoxPieces
             // 
+
             this.textBoxPieces.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.textBoxPieces.Location = new System.Drawing.Point(86, 109);
             this.textBoxPieces.Name = "textBoxPieces";
@@ -74,18 +79,23 @@
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.Location = new System.Drawing.Point(501, 111);
             this.label1.Name = "label1";
+
             this.label1.Size = new System.Drawing.Size(0, 25);
+
             this.label1.TabIndex = 4;
             // 
             // button1
             // 
+
             this.button1.Font = new System.Drawing.Font("Microsoft YaHei Light", 13F);
             this.button1.Location = new System.Drawing.Point(12, 169);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(336, 43);
+
             this.button1.TabIndex = 5;
             this.button1.Text = "O B L I C Z";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
@@ -143,15 +153,18 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(691, 242);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.groupBox1);
+
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+
             this.MaximizeBox = false;
+
             this.Name = "Form1";
             this.Text = "Kalkulator Alkoholizujący";
             this.groupBox1.ResumeLayout(false);
